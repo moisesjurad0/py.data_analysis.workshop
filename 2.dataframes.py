@@ -1,3 +1,5 @@
+"""sumary_line."""
+
 import pandas as pd
 
 tabla = pd.read_csv(r'TablaEjemplo.csv')
