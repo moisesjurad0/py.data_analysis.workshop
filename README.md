@@ -11,3 +11,9 @@ contets include:
   - NumPy
   - SciPy
   - Matplotlib
+
+run this in your work folder to begin:
+
+1. `py -m venv myvenv1`
+1. `pip install pandas`
+1. `pip install pandas-stubs` (this is for run mypy to check for errors before run py files)
