@@ -27,7 +27,8 @@ ali.Artículo.value_counts().plot()  # por defecto es plot(kind='Line')
 plt.show()
 print('---')
 
-ali.Artículo.value_counts().plot(kind='line')  # por defecto es plot(kind='Line')
+# por defecto es plot(kind='Line')
+ali.Artículo.value_counts().plot(kind='line', color='red')
 plt.show()
 print('---')
 
@@ -46,6 +47,17 @@ print('---')
 
 # Dispersion Ghraphics
 tabla.head().plot(kind='scatter', x='Unidades', y='Ganancia')
+plt.show()
+print('---')
+
+# Colores. Usa el parametro color
+tabla.head().plot(kind='scatter', x='Unidades', y='Ganancia', color='green')
+plt.show()
+print('---')
+
+# colormap. You can change colormap instead of color with some default
+# values as e.g. jet & twilight
+ali.Artículo.value_counts().plot(kind='pie', colormap='twilight')
 plt.show()
 print('---')
 
