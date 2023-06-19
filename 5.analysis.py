@@ -29,13 +29,17 @@ print(tabla.Vendedor.sort_values())
 print(tabla.sort_values(by=['Vendedor', 'Ganancia']))
 
 # INDEXING
-
+# ---------
 # filtra columna por valor
 print(tabla.Artículo == 'Gorras')
 # filtra tabla por columna filtrada
 print(tabla[tabla.Artículo == 'Gorras'])
 # filtra tabla por 2 columna
-print("TMP1----------")
 print(tabla[(tabla.Artículo == 'Gorras') & (tabla.Región == 'Norte')])
+
+# STRINGS
+# ---------
+print("TMP1----------")
+
 
 print(pd.__version__)
