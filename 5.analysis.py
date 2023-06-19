@@ -44,10 +44,14 @@ print(tabla[(tabla.Artículo == 'Gorras') & (tabla.Región == 'Norte')])
 # STRINGS
 # ---------
 
-# filtra columna por valor, pero manejandola como un str
+# filtra columna por valor, pero manejandola como un str y contains
 print(tabla.Vendedor.str.contains('Trevor'))
-# filtra tabla por columna filtrada
-print("TMP1----------")
+
+# filtra tabla por columna filtrada por contains
 print(tabla[tabla.Vendedor.str.contains('Trevor')])
+
+# filtra tabla por columna filtrada por startswith
+print("TMP1----------")
+print(tabla[tabla.Vendedor.str.startswith('T')])
 
 print(pd.__version__)
