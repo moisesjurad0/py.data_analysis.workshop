@@ -28,4 +28,7 @@ print(tabla.tail())
 # por defecto muestra las ULTIMAS 5 filas
 print(tabla.tail(3))
 
+# imprime directamente una lista los tipos de datos de cada columna
+tabla.info()
+
 print(pd.__version__)
