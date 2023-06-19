@@ -24,11 +24,18 @@ print(tabla.Vendedor.value_counts(dropna=True))
 # ordena una columna
 print(tabla.Vendedor.sort_values())
 
-print("TMP------TMP")
 # ordena toda la tabla, se usa by para determinar que columnas
 # por defecto es ASCendet
 print(tabla.sort_values(by=['Vendedor', 'Ganancia']))
 
 # INDEXING
+
+# filtra columna por valor
+print(tabla.Artículo == 'Gorras')
+# filtra tabla por columna filtrada
+print(tabla[tabla.Artículo == 'Gorras'])
+# filtra tabla por 2 columna
+print("TMP1----------")
+print(tabla[(tabla.Artículo == 'Gorras') & (tabla.Región == 'Norte')])
 
 print(pd.__version__)
