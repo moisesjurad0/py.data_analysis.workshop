@@ -17,6 +17,13 @@ print('---')
 
 # the changes to the index wasn't applied, are only as return values.
 print(tabla.head())
+print('---')
+
+# in order to make the changes permanent use in_place | this don't return
+# a copy.
+tabla.set_index('Vendedor', inplace=True)
+print(tabla.head())
+
 
 print('---ver---')
 print(pd.__version__)
