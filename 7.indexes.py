@@ -60,7 +60,7 @@ tabla.reset_index(inplace=True)  # reseteamos el original xsia
 mytable03 = tabla.set_index('Vendedor')
 print(mytable03.loc['Sarah Bond'].head())
 
-# another way of do the same
+# another way of do the same but without modifying index
 print(tabla.loc[tabla.Vendedor == 'Sarah Bond'].head())
 
 
