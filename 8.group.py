@@ -29,3 +29,9 @@ print('---')
 
 # AGGR FUNCTIONS
 print(tabla.groupby('Región').size())
+print('---')
+print('---')
+print('---')
+
+print(tabla.groupby(['Región', 'Vendedor', 'Ganancia']).agg(
+    ['min', 'max', 'count']))
