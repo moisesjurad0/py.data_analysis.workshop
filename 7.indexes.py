@@ -35,5 +35,31 @@ print(mytable01.head())
 # the original table remains the same
 print(tabla.head())
 
+# though this is a copy the original table it can reset its index and will
+# have the initial numeric index with which wasn't born
+print('---')
+mytable01.reset_index(inplace=True)
+print(mytable01.head())
+
+
+# SORT
+# the sorting is faster using sort_index cause it uses the index.
+print('---')
+mytable02 = tabla.set_index('Vendedor')
+mytable02.sort_index(inplace=True)
+print(mytable02.head())
+
+mytable02.sort_index(inplace=True, ascending=False)
+print(mytable02.head())
+print('---')
+
+# LOC
+# indice basado en etiquetas. para que funcione tiene que setear el indice
+# para que loc busque el valor ahí.
+tabla.reset_index(inplace=True)  # reseteamos el original xsia
+mytable03 = tabla.set_index('Vendedor')
+print(mytable03.loc['Sarah Bond'].head())
+
+
 print('---ver---')
 print(pd.__version__)
