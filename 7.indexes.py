@@ -60,6 +60,9 @@ tabla.reset_index(inplace=True)  # reseteamos el original xsia
 mytable03 = tabla.set_index('Vendedor')
 print(mytable03.loc['Sarah Bond'].head())
 
+# another way of do the same
+print(tabla.loc[tabla.Vendedor == 'Sarah Bond'].head())
+
 
 print('---ver---')
 print(pd.__version__)
