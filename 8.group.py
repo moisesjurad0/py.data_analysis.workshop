@@ -20,5 +20,12 @@ for group_key, group_value in tabla.groupby('Región'):
 print('---')
 print('---')
 print('---')
+
 print(type(group_key))  # str
 print(type(group_value))  # pandas.core.frame.DataFrame
+print('---')
+print('---')
+print('---')
+
+# AGGR FUNCTIONS
+print(tabla.groupby('Región').size())
