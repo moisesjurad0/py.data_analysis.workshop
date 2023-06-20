@@ -63,6 +63,15 @@ print(mytable03.loc['Sarah Bond'].head())
 # another way of do the same but without modifying index
 print(tabla.loc[tabla.Vendedor == 'Sarah Bond'].head())
 
+# ILOC
+# Obtiene por indice numerico
+print(mytable03.iloc[231])
+
+# Obtiene varios por indice numerico
+print(mytable03.iloc[[231, 49, 162, 101]])
+
+# Obtiene rango por indice numerico
+print(mytable03.iloc[7:14])
 
 print('---ver---')
 print(pd.__version__)
