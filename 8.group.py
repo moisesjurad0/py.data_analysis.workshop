@@ -35,3 +35,23 @@ print('---')
 
 print(tabla.groupby(['Región', 'Vendedor', 'Ganancia']).agg(
     ['min', 'max', 'count']))
+print('---')
+print('---')
+print('---')
+
+print(tabla.groupby(['Región', 'Vendedor', 'Ganancia']).agg('count'))
+print('---')
+print('---')
+print('---')
+
+print(
+    tabla.groupby(['Región', 'Vendedor', 'Ganancia'])
+    .agg({
+        'Región': ['min', 'max', 'count']
+    })
+)
+print('---')
+print('---')
+print('---')
+
+
