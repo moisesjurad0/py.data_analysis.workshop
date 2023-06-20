@@ -24,6 +24,16 @@ print('---')
 tabla.set_index('Vendedor', inplace=True)
 print(tabla.head())
 
+# reset the index
+tabla.reset_index(inplace=True)
+print(tabla.head())
+
+# copy to a variable
+mytable01 = tabla.set_index('Vendedor')
+print(mytable01.head())
+
+# the original table remains the same
+print(tabla.head())
 
 print('---ver---')
 print(pd.__version__)
