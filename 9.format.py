@@ -5,7 +5,7 @@ print('---')
 print('---')
 print('---')
 
-# STACK
+# UNSTACK
 
 cat = tabla[
     (tabla.Vendedor == 'Sarah Bond') &
@@ -36,6 +36,27 @@ print('---')
 
 e = c.unstack('Región')
 print(e)
+print('---')
+print('---')
+print('---')
+
+# STACK
+print(e.stack())
+print('---')
+print('---')
+print('---')
+
+print(e.stack('Región'))
+print('---')
+print('---')
+print('---')
+
+print(e.unstack())
+print('---')
+print('---')
+print('---')
+
+print(e.unstack('Categoría'))
 print('---')
 print('---')
 print('---')
