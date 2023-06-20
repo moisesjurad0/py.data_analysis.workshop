@@ -55,3 +55,44 @@ print('---')
 print('---')
 
 
+print(
+    tabla.loc[tabla.Vendedor == 'Sarah Bond']
+    .groupby('Vendedor')
+    .agg({'Ganancia': ['min', 'max']})
+)
+print('---')
+print('---')
+print('---')
+
+print(
+    tabla
+    .groupby('Vendedor')
+    .agg({'Ganancia': ['min', 'max', 'sum']})
+)
+print('---')
+print('---')
+print('---')
+
+print(
+    tabla
+    .groupby('Vendedor')['Ganancia']
+    .agg(['min', 'max', 'sum'])
+)
+print('---')
+print('---')
+print('---')
+
+print(
+    tabla
+    .groupby('Vendedor')['Ganancia']
+    .agg(['sum', 'count'])
+)
+print('---')
+print('---')
+print('---')
+
+print(
+    tabla
+    .groupby('Vendedor')['Ganancia']
+    .sum()
+)
