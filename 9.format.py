@@ -56,7 +56,8 @@ print('---')
 print('---')
 print('---')
 
-print(e.unstack('Categoría'))
+# fill_value, para rellenar NaN
+print(e.unstack('Categoría', fill_value=0))
 print('---')
 print('---')
 print('---')
